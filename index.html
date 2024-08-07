@@ -7,17 +7,18 @@
 </head>
 <body>
     <h1>Enter your details to get the link</h1>
-    <form method="POST">
-        {{ form.hidden_tag() }}
-        <p>
-            {{ form.first_name.label }}<br>
-            {{ form.first_name(size=32) }}
-        </p>
-        <p>
-            {{ form.last_name.label }}<br>
-            {{ form.last_name(size=32) }}
-        </p>
-        <p>{{ form.submit() }}</p>
-    </form>
+    <form method="POST" action="https://yourusername.pythonanywhere.com/">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.first_name.label }}<br>
+        {{ form.first_name(size=32) }}
+    </p>
+    <p>
+        {{ form.last_name.label }}<br>
+        {{ form.last_name(size=32) }}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
+
 </body>
 </html>
